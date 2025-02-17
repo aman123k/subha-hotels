@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Newest from "./components/Newest";
+import EventsSection from "./components/EventsSection";
+import DiningSlider from "./components/DiningSlider";
+import StatsAndOffers from "./components/StatsAndOffers";
+import Explore from "./components/Explore";
+import Brands from "./components/Brands";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${isMenuOpen ? "h-screen overflow-hidden" : ""}`}>
+      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <StatsAndOffers />
+      <Explore />
+      <Brands />
+      <DiningSlider />
+      <EventsSection />
+      <Newest />
+      <Footer />
     </div>
   );
 }
