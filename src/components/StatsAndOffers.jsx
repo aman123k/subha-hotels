@@ -32,7 +32,8 @@ function StatsAndOffers() {
             <img
               src={offers[currentSlide].image}
               alt={offers[currentSlide].title}
-              className="w-[400px] h-[270px] object-cover max-[1250px]:w-[380px] max-[1250px]:h-[250px] max-[850px]:w-[300px] max-[650px]:w-full max-[650px]:h-[200px]"
+              className="w-[400px] h-[270px] object-cover max-[1250px]:w-[380px] max-[1250px]:h-[250px] 
+              max-[850px]:w-[300px] max-[650px]:w-full max-[650px]:h-[220px]"
             />
           </div>
 
@@ -58,7 +59,7 @@ function StatsAndOffers() {
               className="w-[400px] h-[270px] object-cover max-[1250px]:w-[380px] max-[1250px]:h-[250px]"
             />
           </div>
-          <div className="flex-shrink-0 flex w-[500px] flex-col gap-5 max-[1250px]:w-[400px] max-[850px]:w-[350px] max-[650px]:w-full max-[650px]:gap-3">
+          <div className="flex-shrink-0 flex w-[500px] flex-col gap-5 max-[1250px]:w-[400px] max-[850px]:w-[350px] max-[650px]:w-full max-[650px]:gap-3 max-[650px]:hidden">
             <h3 className="text-[26px] text-[#545454] font-light tracking-wide font-Raleway max-[650px]:text-[23px]">
               {offers[currentSlide].title}
             </h3>

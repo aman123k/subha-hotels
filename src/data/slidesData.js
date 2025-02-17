@@ -17,6 +17,7 @@ import events3 from "../images/events3.jpg";
 // OFFERS AS PER YOUR NEEDS
 import offer from "../images/Offer1.jpeg";
 import offer2 from "../images/Offer2.jpeg";
+import offer3 from "../images/Offer3.jpeg";
 
 export const slides = [
   {
@@ -152,7 +153,7 @@ export const offers = [
     title: "Extended Stay Offer",
     description:
       "Stay longer and save more. Get special rates for stays of 7 nights or more.",
-    image: events2,
+    image: offer3,
     buttonText: "Book Now",
   },
 ];
