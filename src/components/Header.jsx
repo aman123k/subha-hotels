@@ -8,7 +8,14 @@ import { TiGroup } from "react-icons/ti";
 import { RxCross2 } from "react-icons/rx";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { LuHotel } from "react-icons/lu";
-import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+import {
+  FaArrowRightLong,
+  FaArrowLeftLong,
+  FaChampagneGlasses,
+  FaBullhorn,
+} from "react-icons/fa6";
+import { IoMdContact } from "react-icons/io";
+import { FaConciergeBell } from "react-icons/fa";
 
 function Header({ isMenuOpen, setIsMenuOpen }) {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -205,7 +212,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
                max-[650px]:py-2.5 max-[650px]:flex max-[650px]:gap-2.5 max-[650px]:items-center max-[650px]:px-8 max-[650px]:bg-white max-[650px]:w-full"
               >
                 <span className="bg-[#EFE9E9] p-1.5 rounded-full text-[#333] max-[650px]:block hidden">
-                  <LuHotel />
+                  <FaBullhorn />
                 </span>
                 Promotion
               </li>
@@ -214,7 +221,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
                max-[650px]:py-2.5 max-[650px]:flex max-[650px]:gap-2.5 max-[650px]:items-center max-[650px]:px-8 max-[650px]:bg-white max-[650px]:w-full"
               >
                 <span className="bg-[#EFE9E9] p-1.5 rounded-full text-[#333] max-[650px]:block hidden">
-                  <LuHotel />
+                  <FaConciergeBell />
                 </span>
                 Restaurant
               </li>
@@ -223,7 +230,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
                max-[650px]:py-2.5 max-[650px]:flex max-[650px]:gap-2.5 max-[650px]:items-center max-[650px]:px-8 max-[650px]:bg-white max-[650px]:w-full"
               >
                 <span className="bg-[#EFE9E9] p-1.5 rounded-full text-[#333] max-[650px]:block hidden">
-                  <LuHotel />
+                  <FaChampagneGlasses />
                 </span>
                 Banquets
               </li>
@@ -232,7 +239,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
                max-[650px]:py-2.5 max-[650px]:flex max-[650px]:gap-2.5 max-[650px]:items-center max-[650px]:px-8 max-[650px]:bg-white max-[650px]:w-full"
               >
                 <span className="bg-[#EFE9E9] p-1.5 rounded-full text-[#333] max-[650px]:block hidden">
-                  <LuHotel />
+                  <IoMdContact />
                 </span>
                 Contact
               </li>
