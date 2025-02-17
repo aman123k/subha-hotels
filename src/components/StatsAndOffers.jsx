@@ -61,7 +61,7 @@ function StatsAndOffers() {
           </div>
           <div className="flex-shrink-0 flex w-[500px] flex-col gap-5 max-[1250px]:w-[400px] max-[850px]:w-[350px] max-[650px]:w-full max-[650px]:gap-3 max-[650px]:hidden">
             <h3 className="text-[26px] text-[#545454] font-light tracking-wide font-Raleway max-[650px]:text-[23px]">
-              {offers[currentSlide].title}
+              {offers[(currentSlide + 1) % offers.length].title}
             </h3>
             <p className=" text-[16px] text-[#545454] tracking-wide max-[650px]:text-[14px]">
               {offers[(currentSlide + 1) % offers.length].description}
